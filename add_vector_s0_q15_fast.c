@@ -3,8 +3,6 @@
 void add_vector_s0_q15_fast(int n, int16_t* dst, int16_t* src1, int16_t* src2) {
     int vect_8_N_div = n - (n % 8);
     __m128i buf1, buf2, sumbuf;
-    __m128i saturate_max = _mm_set1_epi16(32767);
-    __m128i saturate_min = _mm_set1_epi16(-32768);
 
     for (int vect_8_index = 0; vect_8_index < vect_8_N_div; vect_8_index += 8) {
 
