@@ -3,10 +3,11 @@
 
 void print_menu() {
     printf("Menu:\n");
-    printf("1. Run add_vector_q_15_tb\n");
+    printf("1. Run add_vector_q15_tb\n");
     printf("2. Run add_vector_s0_q15_tb\n");
     printf("3. Run mul_vector_s0_q15_tb\n");
-    printf("4. Exit\n");
+    printf("4. Run add_vector_s1_q15_tb\n");
+    printf("0. Exit\n");
 }
 
 int main() {
@@ -19,20 +20,24 @@ int main() {
 
         switch (choice) {
             case 1:
-                printf("Running add_vector_q_15_tb...\n");
-                add_vector_q15_tb(5, 5);  // You can adjust the parameters as needed
+                printf("Running add_vector_q15_tb...\n");
+                add_vector_q15_tb(5, 5);
                 break;
             case 2:
                 printf("Running add_vector_s0_q15_tb...\n");
-                add_vector_s0_q15_tb(5, 5);  // You can adjust the parameters as needed
+                add_vector_s0_q15_tb(5, 5);
                 break;
             case 3:
                 printf("Running mul_vector_s0_q15_tb...\n");
-                mul_vector_s0_q15_tb(5, 5);  // You can adjust the parameters as needed
+                mul_vector_s0_q15_tb(5, 5);
                 break;
             case 4:
+                printf("Running add_vector_s1_q15_tb...\n");
+                add_vector_s1_q15_tb(10, 10);
+                break;
+            case 0:
                 printf("Exiting...\n");
-                return 0;  // Exit the program
+                return 0;
             default:
                 printf("Invalid choice. Please try again.\n");
                 break;
