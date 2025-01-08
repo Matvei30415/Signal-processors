@@ -9,7 +9,7 @@ void mul_vector_a_cq15_tb(int16_t seed, int num_runs)
     srand(seed);
     for (i = 0; i < num_runs; i++)
     {
-        n = ((long long)rand() * RAND_MAX + rand()) % N_MAX;
+        n = N_MAX;
         dst = (cint32_t *)realloc(dst, n * sizeof(cint32_t));
         src1 = (cint16_t *)realloc(src1, n * sizeof(cint16_t));
         src2 = (cint16_t *)realloc(src2, n * sizeof(cint16_t));
