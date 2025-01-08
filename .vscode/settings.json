@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "dsp_lecture.h": "c"
+    }
+}
