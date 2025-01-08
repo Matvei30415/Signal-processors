@@ -8,6 +8,7 @@ void print_menu() {
     printf("3. Run mul_vector_s0_q15_tb\n");
     printf("4. Run add_vector_s1_q15_tb\n");
     printf("5. Run mul_vector_s15_q15_tb\n");
+    printf("6. Run mul_vector_a_q15_tb\n");
     printf("0. Exit\n");
 }
 
@@ -39,6 +40,10 @@ int main() {
             case 5:
                 printf("Running mul_vector_s15_q15_tb...\n");
                 mul_vector_s15_q15_tb(10, 10);
+                break;
+            case 6:
+                printf("Running mul_vector_a_q15_tb...\n");
+                mul_vector_a_q15_tb(10, 10);
                 break;
             case 0:
                 printf("Exiting...\n");

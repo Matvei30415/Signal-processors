@@ -37,6 +37,11 @@
                 "mul_vector_s15_q15_ref.c",
                 "mul_vector_s15_q15_tb.c",
 
+                "mul_vector_a_q15.c",
+                "mul_vector_a_q15_fast.c",
+                "mul_vector_a_q15_ref.c",
+                "mul_vector_a_q15_tb.c",
+
                 "random_vector.c"
             ],
             "options": {
